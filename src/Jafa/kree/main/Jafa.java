@@ -4,7 +4,7 @@ public class Jafa {
 	
 	private String nome;
 	
-	private String systemLord;
+	private SystemLord systemLord;
 	
 	public String getNome() {
 		return this.nome;
@@ -12,10 +12,10 @@ public class Jafa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getSystemLord() {
+	public SystemLord getSystemLord() {
 		return this.systemLord;
 	}
-	public void setSystemLord(String systemLord) {
+	public void setSystemLord(SystemLord systemLord) {
 		this.systemLord = systemLord;
 	}
 	
