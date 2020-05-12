@@ -19,7 +19,7 @@ public class Mothership {
 	}
 
 	public ArrayList<Jafa> getJafas() {
-		return jafas;
+		return this.jafas;
 	}
 
 	public void setJafas(ArrayList<Jafa> jafas) {
