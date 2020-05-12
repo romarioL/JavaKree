@@ -7,13 +7,13 @@ public class Jafa {
 	private String systemLord;
 	
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	public String getSystemLord() {
-		return systemLord;
+		return this.systemLord;
 	}
 	public void setSystemLord(String systemLord) {
 		this.systemLord = systemLord;
