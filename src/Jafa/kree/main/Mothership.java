@@ -33,7 +33,7 @@ public class Mothership {
 	public void JafasSaudar() {
 		Iterator<Jafa>  itr = jafas.iterator();
 		while(itr.hasNext()) {
-			Jafa j = itr.next();
+			 Jafa j = itr.next();
 			 System.out.println(j.saudar());
 		}
 	}
