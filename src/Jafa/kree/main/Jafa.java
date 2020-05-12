@@ -19,8 +19,27 @@ public class Jafa {
 		this.systemLord = systemLord;
 	}
 	
-	public void saudar() {
-		System.out.println("Jafa, kree!");	
+	public String saudar() {
+		return "Jafa, Kree!";
+	}
+	
+	public String marchar(int passos) {
+		if(passos >= 5) {
+			return "Marchamos  " + passos;
+		}
+		return "Você precisa marchar mais do que isso!";
+	}
+	
+	public String viver(int vida) {
+		
+		if(vida >= 1500) {
+			int vidaTotal = 0;
+			for(int i = 0; i<= vida; i++) {
+				vidaTotal += (i + 50);		
+			}	
+			return "Total de vida " + vidaTotal;	
+		}
+		return "Poucos dias de vida";
 	}
 
 }
