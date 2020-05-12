@@ -25,17 +25,20 @@ public class Jafa {
 	
 	public String marchar(int passos) {
 		if(passos >= 5) {
-			return "Marchamos  " + passos;
+			int totalPassos = 1;
+			for(int i = 1; i<=passos;i++) {
+				totalPassos +=  i;
+			}
+			return "Marchamos  " + totalPassos;
 		}
 		return "Você precisa marchar mais do que isso!";
 	}
 	
-	public String viver(int vida) {
-		
+	public String viver(int vida) {		
 		if(vida >= 1500) {
-			int vidaTotal = 0;
-			for(int i = 0; i<= vida; i++) {
-				vidaTotal += (i + 50);		
+			int vidaTotal = 1;
+			for(int i = 1; i<= vida; i++) {
+				vidaTotal +=  i;	
 			}	
 			return "Total de vida " + vidaTotal;	
 		}
