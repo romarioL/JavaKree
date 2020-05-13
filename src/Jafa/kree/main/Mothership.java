@@ -27,14 +27,13 @@ public class Mothership {
 	}
 	
 	public void addJafa(Jafa j) {
-		jafas.add(j);
+		this.jafas.add(j);
 	}
 	
-	public void JafasSaudar() {
-		Iterator<Jafa>  itr = jafas.iterator();
-		while(itr.hasNext()) {
-			 Jafa j = itr.next();
-			 System.out.println(j.saudar());
+	public void JafasSaudar() {	
+		for(Iterator<Jafa> itr = this.jafas.iterator(); itr.hasNext();) {
+			Jafa j = itr.next();
+			System.out.println(j.saudar());
 		}
 	}
 
