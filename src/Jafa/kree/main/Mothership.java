@@ -9,7 +9,7 @@ public class Mothership {
 	
 	private ArrayList<Jafa> jafas = new ArrayList<Jafa>();
 	
-
+	
 	public SystemLord getSystemLord() {
 		return this.systemLord;
 	}

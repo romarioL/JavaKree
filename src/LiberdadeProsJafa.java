@@ -1,3 +1,5 @@
+import Jafa.kree.main.BercarioGoauld;
+import Jafa.kree.main.BercarioJafa;
 import Jafa.kree.main.Jafa;
 import Jafa.kree.main.Mothership;
 import Jafa.kree.main.SystemLord;
@@ -37,6 +39,12 @@ public class LiberdadeProsJafa {
         m.addJafa(j5);
         
         m.JafasSaudar();
+        
+        BercarioGoauld g = new BercarioGoauld();
+        BercarioJafa ja = new BercarioJafa();
+        
+        SystemLord goauld = g.criarGoauld("Baal", "Lord");
+        ja.criarJafa("Luci", goauld);
         
         
         

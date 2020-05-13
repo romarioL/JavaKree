@@ -9,6 +9,15 @@ public class SystemLord {
 	public String getNome() {
 		return this.nome;
 	}
+	
+	public SystemLord(String nome, String rank) {
+		this.nome = nome;
+		this.rank = rank;
+	}
+	
+	public SystemLord() {
+		
+	}
 
 	public void setNome(String nome) {
 		this.nome = nome;

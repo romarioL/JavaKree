@@ -6,6 +6,15 @@ public class Jafa {
 	
 	private SystemLord systemLord;
 	
+	public Jafa(String nome, SystemLord systemLord) {
+		this.nome = nome;
+		this.systemLord = systemLord;
+	}
+	
+	public Jafa() {
+		
+	}
+	
 	public String getNome() {
 		return this.nome;
 	}
