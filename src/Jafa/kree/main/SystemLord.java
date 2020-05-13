@@ -29,8 +29,7 @@ public class SystemLord {
 	public String destroy(int numero) {
 		if(numero >=5) {
 			return numero * numero + " galaxies destroyed";
-		}
-		
+		}	
 		return "I need more";
 	}
 	
