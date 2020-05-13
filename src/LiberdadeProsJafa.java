@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+
 import Jafa.kree.main.BercarioGoauld;
 import Jafa.kree.main.BercarioJafa;
+import Jafa.kree.main.BercarioNaveMae;
 import Jafa.kree.main.Jafa;
 import Jafa.kree.main.Mothership;
 import Jafa.kree.main.SystemLord;
@@ -48,7 +51,15 @@ public class LiberdadeProsJafa {
         
         
         
+        ArrayList<Jafa> jafas = new ArrayList<Jafa>();
+        jafas.add(j);
+        jafas.add(j2);
+        jafas.add(j3);
+        jafas.add(j4);
+        jafas.add(j5);
         
+        BercarioNaveMae n = new BercarioNaveMae();
+        n.criarNaveMae(goauld, jafas);
 
 	}
 	
