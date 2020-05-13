@@ -35,6 +35,6 @@ public class SystemLord {
 	}
 	
 	public String orders(Jafa j) {
-		return "Take my orders " + j.getNome();
+		return "Take my orders, " + j.getNome();
 	}
 }
