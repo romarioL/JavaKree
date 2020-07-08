@@ -36,5 +36,9 @@ public class SGTeam {
 		
 		return null;
 	}
+	
+   public String answerTheTeam() {
+	   return this.captain.orders();
+   }
 
 }
