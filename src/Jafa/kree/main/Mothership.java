@@ -37,11 +37,13 @@ public class Mothership {
 		this.jafas.add(j);
 	}
 	
-	public void JafasSaudar() {	
+	public String JafasSaudar() {	
 		for(Iterator<Jafa> itr = this.jafas.iterator(); itr.hasNext();) {
 			Jafa j = itr.next();
-			System.out.println(j.saudar());
+			 return j.saudar();
 		}
+		
+		return null;
 	}
 
 }
