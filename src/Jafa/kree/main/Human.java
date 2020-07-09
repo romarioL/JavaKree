@@ -25,17 +25,7 @@ public class Human {
 		return "What's the mission, captain";
 	}
 	
-	public String marchar(int passos) {
-		if(passos >= 5) {
-			int totalPassos = 1;
-			for(int i = 1; i<=passos;i++) {
-				totalPassos +=  i;
-			}
-			return "Marchamos  " + totalPassos;
-		}
-		return "Você precisa marchar mais do que isso!";
-	}
-	
+
 	public int viver(int vida) {		
 		if(vida >= 1500) {
 			int vidaTotal = 1;
