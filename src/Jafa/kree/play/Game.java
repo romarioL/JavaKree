@@ -58,5 +58,16 @@ public class Game {
 		}
 		
 	}
+	
+	public String SwearingExchange() {
+		ArrayList<Jafa> jafas = this.mothership.getJafas();
+		for(Iterator<Jafa> itr = jafas.iterator(); itr.hasNext();) {
+			Jafa j = itr.next();
+			return j.saudar();
+		}
+		return null;
+	}
+	
+	
 
 }
