@@ -3,9 +3,13 @@ import java.util.ArrayList;
 import Jafa.kree.main.BercarioGoauld;
 import Jafa.kree.main.BercarioJafa;
 import Jafa.kree.main.BercarioNaveMae;
+import Jafa.kree.main.Captain;
+import Jafa.kree.main.Human;
 import Jafa.kree.main.Jafa;
 import Jafa.kree.main.Mothership;
+import Jafa.kree.main.SGTeam;
 import Jafa.kree.main.SystemLord;
+import Jafa.kree.play.Game;
 
 public class LiberdadeProsJafa {
 
@@ -21,11 +25,6 @@ public class LiberdadeProsJafa {
 		j4.setNome("Gay");
 		Jafa j5 = new Jafa();
 		j5.setNome("Dimas");
-		System.out.println(j.saudar());
-        System.out.println(j.marchar(4));
-        System.out.println(j.marchar(150));
-        System.out.println(j.viver(1400));
-        System.out.println(j.viver(2000));
         
         SystemLord s = new SystemLord();
         System.out.println(s.pedancy());
@@ -34,20 +33,24 @@ public class LiberdadeProsJafa {
         System.out.println(s.orders(j));
         j.setSystemLord(s);
         
-        Mothership m = new Mothership();
-        m.addJafa(j);
-        m.addJafa(j2);
-        m.addJafa(j3);
-        m.addJafa(j4);
-        m.addJafa(j5);
+      
         
-        m.JafasSaudar();
+        Human h = new Human();
+        h.setNome("Helloi");
+        Human h2 = new Human();
+        h2.setNome("Helloi");
+        Human h3 = new Human();
+        h3.setNome("Helloi");
+        Human h4 = new Human();
+        h4.setNome("Helloi");
+        Human h5 = new Human();
+        h5.setNome("Helloi");
+        Human h6 = new Human();
+        h6.setNome("Helloi");
+       
         
-        BercarioGoauld g = new BercarioGoauld();
-        BercarioJafa ja = new BercarioJafa();
-        
-        SystemLord goauld = g.criarGoauld("Baal", "Lord");
-        ja.criarJafa("Luci", goauld);
+       
+     
         
         
         
@@ -58,8 +61,23 @@ public class LiberdadeProsJafa {
         jafas.add(j4);
         jafas.add(j5);
         
-        BercarioNaveMae n = new BercarioNaveMae();
-        n.criarNaveMae(goauld, jafas);
+        ArrayList<Human> SgTeam = new ArrayList<Human>();
+        SgTeam.add(h);
+        SgTeam.add(h2);
+        SgTeam.add(h3);
+        SgTeam.add(h4);
+        SgTeam.add(h5);
+        
+        Captain c = new Captain();
+        c.setNome("Jesuis");
+        
+        Mothership m = new Mothership(s, jafas);
+        SGTeam sgt = new SGTeam(SgTeam, c);
+        
+        Game g = new Game(sgt, m);
+        System.out.println(g.Play(100, 150));
+        
+      
 
 	}
 	
