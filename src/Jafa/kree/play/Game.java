@@ -2,6 +2,7 @@ package Jafa.kree.play;
 
 import java.util.ArrayList;
 import Jafa.kree.main.SGTeam;
+import Jafa.kree.main.SystemLord;
 import Jafa.kree.main.Captain;
 import Jafa.kree.main.Human;
 import Jafa.kree.main.Jafa;
@@ -82,6 +83,11 @@ public class Game {
 	public String giveOrders() {
 		Captain captain = this.SGTeam.getCaptain();
 		return captain.orders();
+	}
+	
+	public String goauldPedancy() {
+		SystemLord systemLord = this.mothership.getSystemLord();
+		return systemLord.pedancy();
 	}
 	
 	

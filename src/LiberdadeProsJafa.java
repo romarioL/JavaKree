@@ -72,8 +72,10 @@ public class LiberdadeProsJafa {
         
         Game g = new Game(sgt, m);
         System.out.println(g.Play(100, 150));
-        
-      
+        System.out.println(g.SwearingExchange());
+        System.out.println(g.TakeOrders());
+        System.out.println(g.giveOrders());
+        System.out.println(g.goauldPedancy());
 
 	}
 	
