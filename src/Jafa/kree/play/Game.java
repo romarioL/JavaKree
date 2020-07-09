@@ -68,6 +68,16 @@ public class Game {
 		return null;
 	}
 	
+	public String TakeOrders() {
+		ArrayList<Human> human  = this.SGTeam.getHumans();
+		for(Iterator<Human> itr = human.iterator(); itr.hasNext();) {
+			Human h = itr.next();
+			return h.askForMission();
+		}
+		
+		return null;
+	}
+	
 	
 
 }
