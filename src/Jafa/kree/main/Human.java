@@ -22,7 +22,7 @@ public class Human {
 	}
 	
 	public String askForMission() {
-		return "What's the mission captain";
+		return "What's the mission, captain";
 	}
 
 }

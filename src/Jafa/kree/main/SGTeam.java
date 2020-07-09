@@ -7,6 +7,11 @@ public class SGTeam {
 	
 	private ArrayList<Human> humans;
 	private Captain captain;
+	
+	public SGTeam(ArrayList<Human> h, Captain c) {
+		this.humans = h;
+		this.captain = c;
+	}
 
 	public ArrayList<Human> getHumans() {
 		return this.humans;
