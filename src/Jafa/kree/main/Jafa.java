@@ -43,15 +43,15 @@ public class Jafa {
 		return "Você precisa marchar mais do que isso!";
 	}
 	
-	public String viver(int vida) {		
+	public int viver(int vida) {		
 		if(vida >= 1500) {
 			int vidaTotal = 1;
 			for(int i = 1; i<= vida; i++) {
 				vidaTotal +=  i;	
 			}	
-			return "Total de vida " + vidaTotal;	
+			return vidaTotal;	
 		}
-		return "Poucos dias de vida";
+		return 0;
 	}
 
 }
