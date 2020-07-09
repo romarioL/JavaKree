@@ -1,8 +1,4 @@
 import java.util.ArrayList;
-
-import Jafa.kree.main.BercarioGoauld;
-import Jafa.kree.main.BercarioJafa;
-import Jafa.kree.main.BercarioNaveMae;
 import Jafa.kree.main.Captain;
 import Jafa.kree.main.Human;
 import Jafa.kree.main.Jafa;
