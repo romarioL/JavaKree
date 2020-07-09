@@ -90,7 +90,12 @@ public class InitGame {
 	public void setSystemLord(ArrayList<SystemLord> systemLord) {
 		this.systemLord = systemLord;
 	}
-
+    
+	
+	
+	public String  PlayGame(Game g, int jafaLife, int humanLife) {	
+		return g.Play(jafaLife, humanLife);	
+	}
 
 
 
