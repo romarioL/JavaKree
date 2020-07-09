@@ -9,7 +9,7 @@ public class Game {
 	
 	public Game(Jafa.kree.main.SGTeam sgt, Mothership mothership) {
 		  this.SGTeam = sgt;
-		  this.mothership = mothership;
+		  this.setMothership(mothership);
 	}
 
 	public Jafa.kree.main.SGTeam getSGTeam() {
@@ -18,6 +18,14 @@ public class Game {
 
 	public void setSGTeam(Jafa.kree.main.SGTeam sGTeam) {
 		this.SGTeam = sGTeam;
+	}
+
+	public Mothership getMothership() {
+		return mothership;
+	}
+
+	public void setMothership(Mothership mothership) {
+		this.mothership = mothership;
 	}
 
 }
