@@ -1,22 +1,26 @@
 package Jafa.kree.play;
 
 import java.util.ArrayList;
+import Jafa.kree.main.Human;
+import Jafa.kree.main.Captain;
+import Jafa.kree.main.Jafa;
+import Jafa.kree.main.SystemLord;
 
 public class InitGame {
 
-   private ArrayList<Jafa.kree.main.Human> human;
-   private ArrayList<Jafa.kree.main.Captain> captain;
-   private ArrayList<Jafa.kree.main.Jafa> jafa;
-   private ArrayList<Jafa.kree.main.SystemLord> systemLord;
+   private ArrayList<Human> human;
+   private ArrayList<Captain> captain;
+   private ArrayList<Jafa> jafa;
+   private ArrayList<SystemLord> systemLord;
    
    
    
    
    
-	public InitGame(ArrayList<Jafa.kree.main.Human> h, 
-			ArrayList<Jafa.kree.main.Captain> cap, 
-			ArrayList<Jafa.kree.main.Jafa> jafa, 
-			ArrayList<Jafa.kree.main.SystemLord> systemLord) {        
+	public InitGame(ArrayList<Human> h, 
+			ArrayList<Captain> cap, 
+			ArrayList<Jafa> jafa, 
+			ArrayList<SystemLord> systemLord) {        
 		        this.human = h;
 		        this.captain = cap;
 		        this.jafa = jafa;
@@ -27,7 +31,7 @@ public class InitGame {
 
 
 
-	public ArrayList<Jafa.kree.main.Human> getHuman() {
+	public ArrayList<Human> getHuman() {
 		return this.human;
 	}
 
@@ -35,7 +39,7 @@ public class InitGame {
 
 
 
-	public void setHuman(ArrayList<Jafa.kree.main.Human> human) {
+	public void setHuman(ArrayList<Human> human) {
 		this.human = human;
 	}
 
@@ -43,7 +47,7 @@ public class InitGame {
 
 
 
-	public ArrayList<Jafa.kree.main.Captain> getCaptain() {
+	public ArrayList<Captain> getCaptain() {
 		return this.captain;
 	}
 
@@ -51,7 +55,7 @@ public class InitGame {
 
 
 
-	public void setCaptain(ArrayList<Jafa.kree.main.Captain> captain) {
+	public void setCaptain(ArrayList<Captain> captain) {
 		this.captain = captain;
 	}
 
@@ -59,7 +63,7 @@ public class InitGame {
 
 
 
-	public ArrayList<Jafa.kree.main.Jafa> getJafa() {
+	public ArrayList<Jafa> getJafa() {
 		return this.jafa;
 	}
 
@@ -67,7 +71,7 @@ public class InitGame {
 
 
 
-	public void setJafa(ArrayList<Jafa.kree.main.Jafa> jafa) {
+	public void setJafa(ArrayList<Jafa> jafa) {
 		this.jafa = jafa;
 	}
 
@@ -75,7 +79,7 @@ public class InitGame {
 
 
 
-	public ArrayList<Jafa.kree.main.SystemLord> getSystemLord() {
+	public ArrayList<SystemLord> getSystemLord() {
 		return this.systemLord;
 	}
 
@@ -83,7 +87,7 @@ public class InitGame {
 
 
 
-	public void setSystemLord(ArrayList<Jafa.kree.main.SystemLord> systemLord) {
+	public void setSystemLord(ArrayList<SystemLord> systemLord) {
 		this.systemLord = systemLord;
 	}
 

@@ -1,25 +1,28 @@
 package Jafa.kree.play;
 
 import java.util.ArrayList;
+import Jafa.kree.main.SGTeam;
+import Jafa.kree.main.Human;
+import Jafa.kree.main.Jafa;
+import  Jafa.kree.main.Mothership;
 import java.util.Iterator;
 
-import Jafa.kree.main.Mothership;
 
 public class Game {
 	
-	private Jafa.kree.main.SGTeam SGTeam;
+	private SGTeam SGTeam;
 	private Mothership mothership;
 	
-	public Game(Jafa.kree.main.SGTeam sgt, Mothership mothership) {
+	public Game(SGTeam sgt, Mothership mothership) {
 		  this.SGTeam = sgt;
 		  this.setMothership(mothership);
 	}
 
-	public Jafa.kree.main.SGTeam getSGTeam() {
+	public SGTeam getSGTeam() {
 		return this.SGTeam;
 	}
 
-	public void setSGTeam(Jafa.kree.main.SGTeam sGTeam) {
+	public void setSGTeam(SGTeam sGTeam) {
 		this.SGTeam = sGTeam;
 	}
 
@@ -32,19 +35,19 @@ public class Game {
 	}
 	
 	public String Play(int jafaLife, int humanLife) {
-		ArrayList<Jafa.kree.main.Human> humans = this.SGTeam.getHumans();
-		ArrayList<Jafa.kree.main.Jafa> jafas = this.mothership.getJafas();
+		ArrayList<Human> humans = this.SGTeam.getHumans();
+		ArrayList<Jafa> jafas = this.mothership.getJafas();
 		
 		int lifeJafa = 0;
 		int lifeHuman = 0;
 		
-		for(Iterator<Jafa.kree.main.Human> itr = humans.iterator(); itr.hasNext();) {
-			Jafa.kree.main.Human h = itr.next();
+		for(Iterator<Human> itr = humans.iterator(); itr.hasNext();) {
+			Human h = itr.next();
 			lifeHuman += h.viver(humanLife);
 		}
 		
-		for(Iterator<Jafa.kree.main.Jafa> itr = jafas.iterator(); itr.hasNext();) {
-			Jafa.kree.main.Jafa j = itr.next();
+		for(Iterator<Jafa> itr = jafas.iterator(); itr.hasNext();) {
+			Jafa j = itr.next();
 			lifeJafa += j.viver(lifeJafa);
 		}
 		
