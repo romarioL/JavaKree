@@ -33,15 +33,16 @@ public class Jafa {
 	}
 	
 	
+	@SuppressWarnings("unused")
 	public int viver(int vida) {		
-		if(vida >= 1500) {
 			int vidaTotal = 1;
-			for(int i = 1; i<= vida; i++) {
-				vidaTotal +=  i;	
-			}	
-			return vidaTotal;	
-		}
-		return 0;
+			int i = 1;
+			while(i <= vida) {
+				vidaTotal +=  i;
+				i++;
+			}
+			
+		   return vidaTotal;
 	}
 
 }

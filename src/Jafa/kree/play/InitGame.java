@@ -11,6 +11,16 @@ public class InitGame {
 	private Captain captain;
 	
 
+	public InitGame(ArrayList<Jafa> jafas,
+			SystemLord s, 
+			ArrayList<Human> sgTeam, 
+			Captain c) {
+		   this.jafas = jafas;
+		   this.systemLord = s;
+		   this.humans = sgTeam;
+		   this.captain = c;
+	}
+
 	public ArrayList<Jafa> getJafas() {
 		return this.jafas;
 	}

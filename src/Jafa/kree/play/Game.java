@@ -50,8 +50,11 @@ public class Game {
 		
 		for(Iterator<Jafa> itr = jafas.iterator(); itr.hasNext();) {
 			Jafa j = itr.next();
-			lifeJafa += j.viver(lifeJafa);
+			lifeJafa += j.viver(jafaLife);
 		}
+		
+		System.out.println(lifeHuman);
+		System.out.println(lifeJafa);
 		
 		if(lifeJafa > lifeHuman) {
 			return "Mothership has winn";

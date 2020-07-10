@@ -6,6 +6,7 @@ import Jafa.kree.main.Mothership;
 import Jafa.kree.main.SGTeam;
 import Jafa.kree.main.SystemLord;
 import Jafa.kree.play.Game;
+import Jafa.kree.play.InitGame;
 
 public class LiberdadeProsJafa {
 
@@ -67,15 +68,8 @@ public class LiberdadeProsJafa {
         Captain c = new Captain();
         c.setNome("Jesuis");
         
-        Mothership m = new Mothership(s, jafas);
-        SGTeam sgt = new SGTeam(SgTeam, c);
-        
-        Game g = new Game(sgt, m);
-        System.out.println(g.Play(100, 150));
-        System.out.println(g.SwearingExchange());
-        System.out.println(g.TakeOrders());
-        System.out.println(g.giveOrders());
-        System.out.println(g.goauldPedancy());
+       InitGame initg = new InitGame(jafas, s, SgTeam, c);
+       System.out.println(initg.Init(600, 20));
 
 	}
 	
