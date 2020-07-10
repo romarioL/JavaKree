@@ -54,11 +54,19 @@ public class InitGame {
 		this.captain = captain;
 	}
 	
-	public String Init(int jafaLife, int humanLife) {
+	public void Init(int jafaLife, int humanLife) {
 		Mothership m = new Mothership(systemLord, jafas);
 		SGTeam s = new SGTeam(humans, captain);
 		Game g = new Game(s, m);
-		return g.Play(jafaLife, humanLife);
+		this.SwearingExchange(g, jafaLife, humanLife);
+	}
+	
+	private void SwearingExchange(Game g, int jafaLife, int humanLife) {
+	      System.out.println(g.SwearingExchange());
+	      System.out.println(g.TakeOrders());
+	      System.out.println(g.giveOrders());
+	      System.out.println(g.goauldPedancy());
+	      System.out.println(g.Play(jafaLife, humanLife));
 	}
 	
 	

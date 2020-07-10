@@ -23,12 +23,8 @@ public class LiberdadeProsJafa {
 		Jafa j5 = new Jafa();
 		j5.setNome("Dimas");
         
-        SystemLord s = new SystemLord();
-        System.out.println(s.pedancy());
-        System.out.println(s.destroy(4));
-        System.out.println(s.destroy(100));
-        System.out.println(s.orders(j));
-        j.setSystemLord(s);
+       SystemLord s = new SystemLord();
+       s.setNome("Baal");
         
       
         
@@ -69,7 +65,7 @@ public class LiberdadeProsJafa {
         c.setNome("Jesuis");
         
        InitGame initg = new InitGame(jafas, s, SgTeam, c);
-       System.out.println(initg.Init(600, 20));
+       initg.Init(10, 20);
 
 	}
 	

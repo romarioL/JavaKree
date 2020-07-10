@@ -53,9 +53,6 @@ public class Game {
 			lifeJafa += j.viver(jafaLife);
 		}
 		
-		System.out.println(lifeHuman);
-		System.out.println(lifeJafa);
-		
 		if(lifeJafa > lifeHuman) {
 			return "Mothership has winn";
 		}else {
